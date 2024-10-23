@@ -8,7 +8,7 @@ This module can be used via the [aws-ecs](github.com/nuonco/sandboxes/aws-ecs)
 project in [nuonco/sandboxes](github.com/nuonco/sandboxes).
 
 ```hcl
-resource "aws_vpc" "sandbox" {
+resource "nuon_vpc" "sandbox" {
   terraform_version = "v1.6.3"
 
   name = "byovpc"
