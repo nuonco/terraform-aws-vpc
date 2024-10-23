@@ -4,11 +4,9 @@ Terraform module for creating a VPC to install BYOPC installs into.
 
 ## Usage
 
-This module can be used via the [aws-ecs](github.com/nuonco/sandboxes/aws-ecs)
-project in [nuonco/sandboxes](github.com/nuonco/sandboxes).
-
 ```hcl
-resource "nuon_vpc" "sandbox" {
+module "nuon-vpc" {
+  source = "nuonco/vpc/aws"
   terraform_version = "v1.6.3"
 
   name = "byovpc"
