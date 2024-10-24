@@ -7,7 +7,6 @@ Terraform module for creating a VPC to install BYOPC installs into.
 ```hcl
 module "nuon-vpc" {
   source = "nuonco/vpc/aws"
-  terraform_version = "v1.6.3"
 
   name = "byovpc"
 
